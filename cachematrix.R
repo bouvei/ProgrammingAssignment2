@@ -1,9 +1,9 @@
 ## Put comments here that give an overall description of what your
-## functions do
+## functions do - Comments are added
 
-## Write a short comment describing this function
+## Example functions are kept, FYI
 
-##example vectors from the assignment description
+##e Start of xample vectors from the assignment description
 makeVector <- function(x = numeric()) {
     m <- NULL
     set <- function(y) {
@@ -34,19 +34,25 @@ cachemean <- function(x, ...) {
 
 makeCacheMatrix <- function(x = matrix()) {
 
+    ## initialize i as null
     i <- null
     
+    ## set m with taken matrix, set i for null
     set <- function(matrix){
         m <<- matrix
         i <<- null
     }
     
+    ## get x
     get <- function() x
     
+    ## set i with argument inverse matrix
     setInverse <- function(inverse) i <<- inverse
     
+    ## get i matrix (favorably set as the inverted matrix)
     getInverse <- function() i
     
+    ## list of functions in makeCacheArray()
     list(set=set, 
          get=get, 
          setInverse=setInverse, 
